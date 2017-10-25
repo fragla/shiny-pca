@@ -52,7 +52,7 @@ shinyServer(function(input, output) {
     }
     else {
       plot_ly(as.data.frame(pca), x = ~PC1, y = ~PC2, z=~PC3, text = rownames(pca), type="scatter3d", mode ="markers", color=as.formula(paste0("~", input$colour)), marker = list(size = 4))
-
+    }
   }
 
 
